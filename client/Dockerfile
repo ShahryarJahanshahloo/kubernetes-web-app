@@ -1,5 +1,5 @@
 FROM node:16-alpine as builder
-WORKDIR '/app'
+WORKDIR /app
 COPY . .
 RUN npm install --omit=dev
 RUN npm run build
